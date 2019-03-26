@@ -24,7 +24,8 @@ def processTrips(pid, records):
     import shapely.geometry as geom
     
     proj = pyproj.Proj(init="epsg:2263", preserve_units=True)    
-    index, zones = createIndex('ZillowNeighborhoods-NY/ZillowNeighborhoods-NY.shp')    
+    # index, zones = createIndex('ZillowNeighborhoods-NY/ZillowNeighborhoods-NY.shp')    
+    index, zones = createIndex('ZillowNeighborhoods-NY.geojson')    
     
     if pid==0:
         next(records)
