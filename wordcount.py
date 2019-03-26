@@ -6,5 +6,5 @@ if __name__ == "__main__":
     .flatMap(lambda x: x.split())\
     .map(lambda x: (x,1))\
     .reduceByKey(lambda x, y: x + y)\
-    .saveAsTestFile('output')
+    .saveAsTextFile('output')
 
